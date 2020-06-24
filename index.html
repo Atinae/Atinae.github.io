@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#b3ffff;
+}
+
+/* Style the header */
+header {
+  background-color: #b3ffff;
+  padding: 30px;
+  text-align: left;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Favourite Quote</h2>
+<p>"Dreams without goals are just dreams, and it fuels dissapointment"</p>
+<p>Denzel Washington</p>
+
+<header>
+  <h2>
+  <img src="picture.jpg" alt="image" style="width:15%">
+  </h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li>About</li>
+      <li>Likes</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>About</h1>
+    <p>Write about yourself. What kind or person you are. What are your opinions.</p>
+    <h1>Likes</h1>
+    <p>Expplain what you like to do in your spare times</p>
+  </article>
+</section>
+
+<footer>
+  <h2>My Links</h2>
+  <p><a href="https://www.facebook.com/">Facebook</a></p>
+  <p><a href="https://www.linkedin.com/company/linkedin//">LinkedIn</a></p>
+  This is an email link:
+  <a href="mailto:atinaeafereti@gmail.com?Subject=Hello%20again" target="_top">
+  Send Mail</a>
+</footer>
+
+</body>
+</html>
