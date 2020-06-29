@@ -1,4 +1,4 @@
-alert('This is a Bingo game number generator.')
+//alert('This is a Bingo game number generator.')
 
 function random(){
   var res = Math.floor(Math.random() * 5) +1;
